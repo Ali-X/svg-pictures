@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body {
+  background-color: #e0e5ea; }
+
+.content__svg {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Параметры тени */
+  padding: 10px;
+  background-color: white;
+  display: block;
+  margin: 20px auto;
+  width: 500px;
+  height: 500px; }
+  .content__svg--first--line {
+    stroke: green;
+    stroke-width: 1; }
+  .content__svg--first--circle {
+    fill: blue; }
+  .content__svg--first--cross-left {
+    stroke: black;
+    stroke-width: 3; }
+  .content__svg--first--cross-right {
+    stroke: red;
+    stroke-width: 3; }
+  .content__svg--first--ellipse {
+    fill: none;
+    stroke: yellow;
+    stroke-width: 4;
+    stroke-dasharray: 1%; }

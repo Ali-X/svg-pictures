@@ -1,0 +1,46 @@
+body {
+  background-color: $background-color;
+}
+.content {
+
+  &__svg {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Параметры тени */
+    padding: 10px;
+    background-color: white;
+
+    @include square(500px);
+
+    &--first {
+      &--line {
+        stroke: green;
+        stroke-width: 1;
+      }
+
+      &--circle {
+        fill: blue;
+      }
+
+      &--cross-left {
+        stroke: black;
+        stroke-width: 3;
+      }
+
+      &--cross-right {
+        stroke: red;
+        stroke-width: 3;
+      }
+
+      &--ellipse {
+        fill: none;
+        stroke: yellow;
+        stroke-width: 4;
+        stroke-dasharray: 1%;
+      }
+    }
+  }
+
+  &--second {
+
+  }
+}
+
