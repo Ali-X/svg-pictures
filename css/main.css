@@ -9,8 +9,8 @@ body {
   background-color: white;
   display: block;
   margin: 20px auto;
-  width: 500px;
-  height: 500px; }
+  width: 800px;
+  height: 800px; }
   .content__svg--first--line {
     stroke: green;
     stroke-width: 1; }
@@ -40,6 +40,9 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     transform-origin: 50% 50%; }
+  .content__svg--fourth {
+    display: block;
+    margin: auto; }
 
 @keyframes spinning {
   100% {
@@ -314,3 +317,28 @@ body {
 
 .st89 {
   fill: #6391BA; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .content__svg--fourth {
+    width: 250px;
+    height: 150px; } }
+
+@media (min-width: 768px) and (max-width: 959px) {
+  .content__svg--fourth {
+    width: 400px;
+    height: 200px; } }
+
+@media (min-width: 960px) and (max-width: 1199px) {
+  .content__svg--fourth {
+    width: 500px;
+    height: 250px; } }
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+  .content__svg--fourth {
+    width: 600px;
+    height: 300px; } }
+
+@media (min-width: 1800px) {
+  .content__svg--fourth {
+    width: 800px;
+    height: 400px; } }
