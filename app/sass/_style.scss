@@ -117,6 +117,24 @@ body {
         }
       }
     }
+
+    &--sixth {
+      &-black {
+        @include colorful-block($black-color);
+
+        &--line-first {
+          @include white-line(line-first);
+        }
+
+        &--line-second {
+          @include white-line(line-second);
+        }
+
+        &--line-third {
+          @include white-line(line-third);
+        }
+      }
+    }
   }
 
   @keyframes spinning {
@@ -124,5 +142,18 @@ body {
       stroke-dashoffset: 100%;
     }
   }
+
+  @keyframes line-first {
+    @include white-line-rotate(45deg, -200px, -200px);
+
+  }
+
+  @keyframes line-second {
+    @include white-line-rotate(45deg, -250px, -250px);
+  }
+
+  @keyframes line-third {
+    @include white-line-rotate(-45deg, 200px, 200px);
+    }
 }
 

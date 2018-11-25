@@ -41,3 +41,28 @@
   transition: all 1s;
   cursor: pointer;
 }
+
+@mixin white-line($animation-name) {
+  stroke: $white-color;
+  stroke-width: 20;
+  stroke-linecap: round;
+
+  animation-name: $animation-name;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@mixin white-line-rotate($angle, $y20, $y80) {
+  20% {
+    transform: none;
+  }
+  30% {
+    transform: rotate($angle) translate(-50px, $y20);
+    transform-origin: left center;
+  }
+  80% {
+    transform: rotate($angle) translate(-50px, $y80);
+    transform-origin: left center;
+  }
+}

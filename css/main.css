@@ -112,10 +112,69 @@ body {
       fill: #7300b3;
       cursor: pointer;
       transition: all 1s; }
+  .content__svg--sixth-black {
+    display: block;
+    margin: auto;
+    width: 600px;
+    background-color: black; }
+    .content__svg--sixth-black--line-first {
+      stroke: white;
+      stroke-width: 20;
+      stroke-linecap: round;
+      animation-name: line-first;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+    .content__svg--sixth-black--line-second {
+      stroke: white;
+      stroke-width: 20;
+      stroke-linecap: round;
+      animation-name: line-second;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+    .content__svg--sixth-black--line-third {
+      stroke: white;
+      stroke-width: 20;
+      stroke-linecap: round;
+      animation-name: line-third;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
 
 @keyframes spinning {
   100% {
     stroke-dashoffset: 100%; } }
+
+@keyframes line-first {
+  20% {
+    transform: none; }
+  30% {
+    transform: rotate(45deg) translate(-50px, -200px);
+    transform-origin: left center; }
+  80% {
+    transform: rotate(45deg) translate(-50px, -200px);
+    transform-origin: left center; } }
+
+@keyframes line-second {
+  20% {
+    transform: none; }
+  30% {
+    transform: rotate(45deg) translate(-50px, -250px);
+    transform-origin: left center; }
+  80% {
+    transform: rotate(45deg) translate(-50px, -250px);
+    transform-origin: left center; } }
+
+@keyframes line-third {
+  20% {
+    transform: none; }
+  30% {
+    transform: rotate(-45deg) translate(-50px, 200px);
+    transform-origin: left center; }
+  80% {
+    transform: rotate(-45deg) translate(-50px, 200px);
+    transform-origin: left center; } }
 
 .st0 {
   fill: #BA874D; }
