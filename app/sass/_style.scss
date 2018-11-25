@@ -63,8 +63,61 @@ body {
       display: block;
       margin: auto;
     }
-  }
 
+    &--fifth {
+      &-light {
+        @include colorful-block($light-pink-color);
+
+        &--rect-main {
+          @include colorful-rect($pink-color);
+
+          &:hover ~ .content__svg--fifth-light--rect-hover {
+            width: 200px;
+            x: 200px;
+            opacity: 1;
+          }
+
+          &:hover ~ .content__svg--fifth-light--text {
+            fill: $white-color;
+          }
+        }
+
+        &--rect-hover {
+          @include colorful-rect-hover($pink-color);
+        }
+
+        &--text {
+          @include colorful-text($pink-color);
+        }
+      }
+
+      &-dark {
+        @include colorful-block($dark-grey-color);
+
+        &--rect-main {
+          @include colorful-rect($purple-color);
+
+          &:hover ~ .content__svg--fifth-dark--rect-hover {
+            width: 200px;
+            x: 200px;
+            opacity: 1;
+          }
+
+          &:hover ~ .content__svg--fifth-dark--text {
+            fill: white;
+          }
+        }
+
+        &--rect-hover {
+          @include colorful-rect-hover($purple-color);
+        }
+
+        &--text {
+          @include colorful-text($purple-color);
+        }
+      }
+    }
+  }
 
   @keyframes spinning {
     100% {

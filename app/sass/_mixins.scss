@@ -1,6 +1,43 @@
 @mixin square($size) {
   display: block;
   margin: 20px auto;
-  width: $size;
-  height: $size;
+  max-width: $size;
+  max-height: $size;
+  width: auto;
+  height: auto;
+}
+
+@mixin colorful-block($background-color) {
+  display: block;
+  margin: auto;
+  width: 600px;
+  background-color: $background-color;
+}
+
+@mixin colorful-text($text-color) {
+  font-size: 20px;
+  font-family: 'Niramit', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  fill: $text-color;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+@mixin colorful-rect($color) {
+  stroke: $color;
+  stroke-width: 5;
+  fill: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+
+@mixin colorful-rect-hover($color) {
+  opacity: 0;
+  fill: $color;
+  stroke: $color;
+  stroke-width: 5;
+  transition: all 1s;
+  cursor: pointer;
 }

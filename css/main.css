@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Niramit:700");
 body {
   background-color: #e0e5ea; }
 
@@ -9,8 +10,10 @@ body {
   background-color: white;
   display: block;
   margin: 20px auto;
-  width: 800px;
-  height: 800px; }
+  max-width: 800px;
+  max-height: 800px;
+  width: auto;
+  height: auto; }
   .content__svg--first--line {
     stroke: green;
     stroke-width: 1; }
@@ -43,6 +46,72 @@ body {
   .content__svg--fourth {
     display: block;
     margin: auto; }
+  .content__svg--fifth-light {
+    display: block;
+    margin: auto;
+    width: 600px;
+    background-color: #f6eafe; }
+    .content__svg--fifth-light--rect-main {
+      stroke: #fe0067;
+      stroke-width: 5;
+      fill: transparent;
+      cursor: pointer;
+      z-index: 1; }
+      .content__svg--fifth-light--rect-main:hover ~ .content__svg--fifth-light--rect-hover {
+        width: 200px;
+        x: 200px;
+        opacity: 1; }
+      .content__svg--fifth-light--rect-main:hover ~ .content__svg--fifth-light--text {
+        fill: white; }
+    .content__svg--fifth-light--rect-hover {
+      opacity: 0;
+      fill: #fe0067;
+      stroke: #fe0067;
+      stroke-width: 5;
+      transition: all 1s;
+      cursor: pointer; }
+    .content__svg--fifth-light--text {
+      font-size: 20px;
+      font-family: 'Niramit', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      fill: #fe0067;
+      cursor: pointer;
+      transition: all 1s; }
+  .content__svg--fifth-dark {
+    display: block;
+    margin: auto;
+    width: 600px;
+    background-color: #29282f; }
+    .content__svg--fifth-dark--rect-main {
+      stroke: #7300b3;
+      stroke-width: 5;
+      fill: transparent;
+      cursor: pointer;
+      z-index: 1; }
+      .content__svg--fifth-dark--rect-main:hover ~ .content__svg--fifth-dark--rect-hover {
+        width: 200px;
+        x: 200px;
+        opacity: 1; }
+      .content__svg--fifth-dark--rect-main:hover ~ .content__svg--fifth-dark--text {
+        fill: white; }
+    .content__svg--fifth-dark--rect-hover {
+      opacity: 0;
+      fill: #7300b3;
+      stroke: #7300b3;
+      stroke-width: 5;
+      transition: all 1s;
+      cursor: pointer; }
+    .content__svg--fifth-dark--text {
+      font-size: 20px;
+      font-family: 'Niramit', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      fill: #7300b3;
+      cursor: pointer;
+      transition: all 1s; }
 
 @keyframes spinning {
   100% {
