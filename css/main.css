@@ -115,7 +115,7 @@ body {
 
 @keyframes spinning {
   100% {
-    transform: rotate(360deg); } }
+    stroke-dashoffset: 100%; } }
 
 .st0 {
   fill: #BA874D; }
