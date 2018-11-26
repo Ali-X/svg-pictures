@@ -50,19 +50,20 @@ body {
     display: block;
     margin: auto;
     width: 600px;
+    height: 300px;
     background-color: #f6eafe; }
+    .content__svg--fifth-light--rect:hover > .content__svg--fifth-light--rect-hover {
+      width: 200px;
+      x: 0;
+      opacity: 1; }
+    .content__svg--fifth-light--rect:hover > .content__svg--fifth-light--text {
+      fill: white; }
     .content__svg--fifth-light--rect-main {
       stroke: #fe0067;
       stroke-width: 5;
       fill: transparent;
       cursor: pointer;
       z-index: 1; }
-      .content__svg--fifth-light--rect-main:hover ~ .content__svg--fifth-light--rect-hover {
-        width: 200px;
-        x: 200px;
-        opacity: 1; }
-      .content__svg--fifth-light--rect-main:hover ~ .content__svg--fifth-light--text {
-        fill: white; }
     .content__svg--fifth-light--rect-hover {
       opacity: 0;
       fill: #fe0067;
@@ -83,19 +84,20 @@ body {
     display: block;
     margin: auto;
     width: 600px;
+    height: 300px;
     background-color: #29282f; }
+    .content__svg--fifth-dark--rect:hover > .content__svg--fifth-dark--rect-hover {
+      width: 200px;
+      x: 0;
+      opacity: 1; }
+    .content__svg--fifth-dark--rect:hover > .content__svg--fifth-dark--text {
+      fill: white; }
     .content__svg--fifth-dark--rect-main {
       stroke: #7300b3;
       stroke-width: 5;
       fill: transparent;
       cursor: pointer;
       z-index: 1; }
-      .content__svg--fifth-dark--rect-main:hover ~ .content__svg--fifth-dark--rect-hover {
-        width: 200px;
-        x: 200px;
-        opacity: 1; }
-      .content__svg--fifth-dark--rect-main:hover ~ .content__svg--fifth-dark--text {
-        fill: white; }
     .content__svg--fifth-dark--rect-hover {
       opacity: 0;
       fill: #7300b3;
@@ -116,6 +118,7 @@ body {
     display: block;
     margin: auto;
     width: 600px;
+    height: 300px;
     background-color: black; }
     .content__svg--sixth-black--line-first {
       stroke: white;

@@ -68,18 +68,20 @@ body {
       &-light {
         @include colorful-block($light-pink-color);
 
-        &--rect-main {
-          @include colorful-rect($pink-color);
-
-          &:hover ~ .content__svg--fifth-light--rect-hover {
+        &--rect {
+          &:hover > .content__svg--fifth-light--rect-hover {
             width: 200px;
-            x: 200px;
+            x: 0;
             opacity: 1;
           }
 
-          &:hover ~ .content__svg--fifth-light--text {
+          &:hover > .content__svg--fifth-light--text {
             fill: $white-color;
           }
+        }
+
+        &--rect-main {
+          @include colorful-rect($pink-color);
         }
 
         &--rect-hover {
@@ -94,18 +96,20 @@ body {
       &-dark {
         @include colorful-block($dark-grey-color);
 
-        &--rect-main {
-          @include colorful-rect($purple-color);
-
-          &:hover ~ .content__svg--fifth-dark--rect-hover {
+        &--rect {
+          &:hover > .content__svg--fifth-dark--rect-hover {
             width: 200px;
-            x: 200px;
+            x: 0;
             opacity: 1;
           }
 
-          &:hover ~ .content__svg--fifth-dark--text {
-            fill: white;
+          &:hover > .content__svg--fifth-dark--text {
+            fill: $white-color;
           }
+        }
+
+        &--rect-main {
+          @include colorful-rect($purple-color);
         }
 
         &--rect-hover {
@@ -155,6 +159,6 @@ body {
 
   @keyframes line-third {
     @include white-line-rotate(-45deg, 200px, 200px);
-    }
+  }
 }
 
