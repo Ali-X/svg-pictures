@@ -48,7 +48,7 @@ body {
         fill: none;
         stroke: red;
         stroke-width: 30;
-        stroke-dasharray: 50%;
+        stroke-dasharray: calc((2 * #{$PI} * 300) / 4);
         stroke-linecap: round;
 
         animation-name: spinning;
@@ -139,7 +139,8 @@ body {
 
   @keyframes spinning {
     100% {
-      stroke-dashoffset: 100%;
+      //2 * #{$PI} * 300) / 1
+      stroke-dashoffset: 1884;
     }
   }
 
