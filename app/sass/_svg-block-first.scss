@@ -1,0 +1,29 @@
+.svg-block-first {
+  &__line {
+    stroke: green;
+    stroke-width: 1;
+  }
+
+  &__circle {
+    fill: blue;
+  }
+
+  &__cross {
+    stroke-width: 3;
+
+    &--left {
+      stroke: black;
+    }
+
+    &--right {
+      stroke: red;
+    }
+  }
+
+  &__ellipse {
+    fill: none;
+    stroke: yellow;
+    stroke-width: 4;
+    stroke-dasharray: 1%;
+  }
+}

@@ -1,0 +1,58 @@
+.svg-block-fifth {
+  &--light {
+    @include colorful-block($light-pink-color);
+
+    &__rect {
+      &:hover > .content__svg--fifth-light--rect-hover {
+        width: 200px;
+        x: 0;
+        opacity: 1;
+      }
+
+      &:hover > .content__svg--fifth-light--text {
+        fill: $white-color;
+      }
+
+      &__main {
+        @include colorful-rect($pink-color);
+      }
+
+      &__hover {
+        @include colorful-rect-hover($pink-color);
+      }
+    }
+
+    &__text {
+      @include colorful-text($pink-color);
+    }
+  }
+
+  &--dark {
+    @include colorful-block($dark-grey-color);
+
+    &__rect {
+      &:hover > .content__svg--fifth-dark--rect-hover {
+        width: 200px;
+        x: 0;
+        opacity: 1;
+      }
+
+      &:hover > .content__svg--fifth-dark--text {
+        fill: $white-color;
+      }
+
+      &__main {
+        @include colorful-rect($purple-color);
+      }
+
+      &__hover {
+        @include colorful-rect-hover($purple-color);
+      }
+    }
+
+
+    &__text {
+      @include colorful-text($purple-color);
+    }
+  }
+}
