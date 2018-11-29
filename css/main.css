@@ -3,7 +3,7 @@
 body {
   background-color: #e0e5ea; }
 
-.content__svg {
+.content-block {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   /* Параметры тени */
   padding: 10px;
@@ -14,170 +14,6 @@ body {
   max-height: 800px;
   width: auto;
   height: auto; }
-  .content__svg--first--line {
-    stroke: green;
-    stroke-width: 1; }
-  .content__svg--first--circle {
-    fill: blue; }
-  .content__svg--first--cross-left {
-    stroke: black;
-    stroke-width: 3; }
-  .content__svg--first--cross-right {
-    stroke: red;
-    stroke-width: 3; }
-  .content__svg--first--ellipse {
-    fill: none;
-    stroke: yellow;
-    stroke-width: 4;
-    stroke-dasharray: 1%; }
-  .content__svg--second {
-    width: 200px; }
-  .content__svg--third--circle {
-    fill: none;
-    stroke: red;
-    stroke-width: 30;
-    stroke-dasharray: calc((2 * 3.14159 * 300) / 4);
-    stroke-linecap: round;
-    animation-name: spinning;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transform-origin: 50% 50%; }
-  .content__svg--fourth {
-    display: block;
-    margin: auto; }
-  .content__svg--fifth-light {
-    display: block;
-    margin: auto;
-    width: 600px;
-    height: 300px;
-    background-color: #f6eafe; }
-    .content__svg--fifth-light--rect:hover > .content__svg--fifth-light--rect-hover {
-      width: 200px;
-      x: 0;
-      opacity: 1; }
-    .content__svg--fifth-light--rect:hover > .content__svg--fifth-light--text {
-      fill: white; }
-    .content__svg--fifth-light--rect-main {
-      stroke: #fe0067;
-      stroke-width: 5;
-      fill: transparent;
-      cursor: pointer;
-      z-index: 1; }
-    .content__svg--fifth-light--rect-hover {
-      opacity: 0;
-      fill: #fe0067;
-      stroke: #fe0067;
-      stroke-width: 5;
-      transition: all 1s;
-      cursor: pointer; }
-    .content__svg--fifth-light--text {
-      font-size: 20px;
-      font-family: 'Niramit', sans-serif;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      fill: #fe0067;
-      cursor: pointer;
-      transition: all 1s; }
-  .content__svg--fifth-dark {
-    display: block;
-    margin: auto;
-    width: 600px;
-    height: 300px;
-    background-color: #29282f; }
-    .content__svg--fifth-dark--rect:hover > .content__svg--fifth-dark--rect-hover {
-      width: 200px;
-      x: 0;
-      opacity: 1; }
-    .content__svg--fifth-dark--rect:hover > .content__svg--fifth-dark--text {
-      fill: white; }
-    .content__svg--fifth-dark--rect-main {
-      stroke: #7300b3;
-      stroke-width: 5;
-      fill: transparent;
-      cursor: pointer;
-      z-index: 1; }
-    .content__svg--fifth-dark--rect-hover {
-      opacity: 0;
-      fill: #7300b3;
-      stroke: #7300b3;
-      stroke-width: 5;
-      transition: all 1s;
-      cursor: pointer; }
-    .content__svg--fifth-dark--text {
-      font-size: 20px;
-      font-family: 'Niramit', sans-serif;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      fill: #7300b3;
-      cursor: pointer;
-      transition: all 1s; }
-  .content__svg--sixth-black {
-    display: block;
-    margin: auto;
-    width: 600px;
-    height: 300px;
-    background-color: black; }
-    .content__svg--sixth-black--line-first {
-      stroke: white;
-      stroke-width: 20;
-      stroke-linecap: round;
-      animation-name: line-first;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear; }
-    .content__svg--sixth-black--line-second {
-      stroke: white;
-      stroke-width: 20;
-      stroke-linecap: round;
-      animation-name: line-second;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear; }
-    .content__svg--sixth-black--line-third {
-      stroke: white;
-      stroke-width: 20;
-      stroke-linecap: round;
-      animation-name: line-third;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear; }
-
-@keyframes spinning {
-  100% {
-    stroke-dashoffset: 1884; } }
-
-@keyframes line-first {
-  20% {
-    transform: none; }
-  30% {
-    transform: rotate(45deg) translate(-50px, -200px);
-    transform-origin: left center; }
-  80% {
-    transform: rotate(45deg) translate(-50px, -200px);
-    transform-origin: left center; } }
-
-@keyframes line-second {
-  20% {
-    transform: none; }
-  30% {
-    transform: rotate(45deg) translate(-50px, -250px);
-    transform-origin: left center; }
-  80% {
-    transform: rotate(45deg) translate(-50px, -250px);
-    transform-origin: left center; } }
-
-@keyframes line-third {
-  20% {
-    transform: none; }
-  30% {
-    transform: rotate(-45deg) translate(-50px, 200px);
-    transform-origin: left center; }
-  80% {
-    transform: rotate(-45deg) translate(-50px, 200px);
-    transform-origin: left center; } }
 
 .st0 {
   fill: #BA874D; }
@@ -473,3 +309,177 @@ body {
   .content__svg--fourth {
     width: 800px;
     height: 400px; } }
+
+.svg-block-first__line {
+  stroke: green;
+  stroke-width: 1; }
+
+.svg-block-first__circle {
+  fill: blue; }
+
+.svg-block-first__cross {
+  stroke-width: 3; }
+  .svg-block-first__cross--left {
+    stroke: black; }
+  .svg-block-first__cross--right {
+    stroke: red; }
+
+.svg-block-first__ellipse {
+  fill: none;
+  stroke: yellow;
+  stroke-width: 4;
+  stroke-dasharray: 1%; }
+
+.svg-block-second {
+  width: 200px; }
+
+.svg-block-third__circle {
+  fill: none;
+  stroke: red;
+  stroke-width: 30;
+  stroke-dasharray: calc((2 * 3.14159 * 300) / 4);
+  stroke-linecap: round;
+  animation-name: spinning;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 50% 50%; }
+
+@keyframes spinning {
+  100% {
+    stroke-dashoffset: 1884; } }
+
+.svg-block-fourth {
+  display: block;
+  margin: auto; }
+
+.svg-block-fifth--light {
+  display: block;
+  margin: auto;
+  width: 600px;
+  height: 300px;
+  background-color: #f6eafe; }
+  .svg-block-fifth--light__rect:hover > .svg-block-fifth--light__rect__hover {
+    width: 200px;
+    x: 0;
+    opacity: 1; }
+  .svg-block-fifth--light__rect:hover > .svg-block-fifth--light__text {
+    fill: white; }
+  .svg-block-fifth--light__rect__main {
+    stroke: #fe0067;
+    stroke-width: 5;
+    fill: transparent;
+    cursor: pointer;
+    z-index: 1; }
+  .svg-block-fifth--light__rect__hover {
+    opacity: 0;
+    fill: #fe0067;
+    stroke: #fe0067;
+    stroke-width: 5;
+    transition: all 1s;
+    cursor: pointer; }
+  .svg-block-fifth--light__text {
+    font-size: 20px;
+    font-family: 'Niramit', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    fill: #fe0067;
+    cursor: pointer;
+    transition: all 1s; }
+
+.svg-block-fifth--dark {
+  display: block;
+  margin: auto;
+  width: 600px;
+  height: 300px;
+  background-color: #29282f; }
+  .svg-block-fifth--dark__rect:hover > .svg-block-fifth--dark__rect__hover {
+    width: 200px;
+    x: 0;
+    opacity: 1; }
+  .svg-block-fifth--dark__rect:hover > .svg-block-fifth--dark__text {
+    fill: white; }
+  .svg-block-fifth--dark__rect__main {
+    stroke: #7300b3;
+    stroke-width: 5;
+    fill: transparent;
+    cursor: pointer;
+    z-index: 1; }
+  .svg-block-fifth--dark__rect__hover {
+    opacity: 0;
+    fill: #7300b3;
+    stroke: #7300b3;
+    stroke-width: 5;
+    transition: all 1s;
+    cursor: pointer; }
+  .svg-block-fifth--dark__text {
+    font-size: 20px;
+    font-family: 'Niramit', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    fill: #7300b3;
+    cursor: pointer;
+    transition: all 1s; }
+
+.svg-block-sixth--black {
+  display: block;
+  margin: auto;
+  width: 600px;
+  height: 300px;
+  background-color: black; }
+  .svg-block-sixth--black__line--first {
+    stroke: white;
+    stroke-width: 20;
+    stroke-linecap: round;
+    animation-name: line-first;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; }
+  .svg-block-sixth--black__line--second {
+    stroke: white;
+    stroke-width: 20;
+    stroke-linecap: round;
+    animation-name: line-second;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; }
+  .svg-block-sixth--black__line--third {
+    stroke: white;
+    stroke-width: 20;
+    stroke-linecap: round;
+    animation-name: line-third;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; }
+
+@keyframes line-first {
+  20% {
+    transform: none; }
+  30% {
+    transform: rotate(45deg) translate(-50px, -200px);
+    transform-origin: left center; }
+  80% {
+    transform: rotate(45deg) translate(-50px, -200px);
+    transform-origin: left center; } }
+
+@keyframes line-second {
+  20% {
+    transform: none; }
+  30% {
+    transform: rotate(45deg) translate(-50px, -250px);
+    transform-origin: left center; }
+  80% {
+    transform: rotate(45deg) translate(-50px, -250px);
+    transform-origin: left center; } }
+
+@keyframes line-third {
+  20% {
+    transform: none; }
+  30% {
+    transform: rotate(-45deg) translate(-50px, 200px);
+    transform-origin: left center; }
+  80% {
+    transform: rotate(-45deg) translate(-50px, 200px);
+    transform-origin: left center; } }

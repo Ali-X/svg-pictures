@@ -1,0 +1,22 @@
+.svg-block-third {
+  &__circle {
+    fill: none;
+    stroke: red;
+    stroke-width: 30;
+    stroke-dasharray: calc((2 * #{$PI} * 300) / 4);
+    stroke-linecap: round;
+
+    animation-name: spinning;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: 50% 50%;
+  }
+}
+
+@keyframes spinning {
+  100% {
+    //2 * #{$PI} * 300) / 1
+    stroke-dashoffset: 1884;
+  }
+}

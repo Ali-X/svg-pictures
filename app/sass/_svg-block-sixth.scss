@@ -1,0 +1,31 @@
+.svg-block-sixth {
+  &--black {
+    @include colorful-block($black-color);
+
+    &__line {
+      &--first {
+        @include white-line(line-first);
+      }
+
+      &--second {
+        @include white-line(line-second);
+      }
+
+      &--third {
+        @include white-line(line-third);
+      }
+    }
+  }
+}
+
+@keyframes line-first {
+  @include white-line-rotate(45deg, -200px, -200px);
+}
+
+@keyframes line-second {
+  @include white-line-rotate(45deg, -250px, -250px);
+}
+
+@keyframes line-third {
+  @include white-line-rotate(-45deg, 200px, 200px);
+}
